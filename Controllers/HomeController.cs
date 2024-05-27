@@ -18,4 +18,13 @@ public class HomeController : Controller
         ViewBag.Paquetes = ORTWorld.Paquetes;
         return View();
     }
+    public IActionResult SelectPaquete()
+    {
+        ViewBag.ListaDestinos = ORTWorld.ListaDestinos;
+        ViewBag.ListaHoteles = ORTWorld.ListaHoteles;
+        ViewBag.ListaAereos = ORTWorld.ListaAereos;
+        ViewBag.Paquetes = ORTWorld.Paquetes;
+        
+        return View();
+    }
 }
