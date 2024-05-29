@@ -14,7 +14,18 @@ public static class ORTWorld {
         "hoteles/mumbai-ginger_mumbai.jpg",
         "hoteles/osaka-sotetsu_fresa_inn_osaka_namba_ekimae.jpg"
     };
-    public static List<string> ListaAereos {get; private set;}
+    public static List<string> ListaAereos {get; private set;} = new List<string>() {
+        "aereos/aerolineas.jpg",
+        "aereos/asiana.jpg",
+        "aereos/avianca.jpg",
+        "aereos/gol.png",
+        "aereos/lufthansa.jpg",
+        "aereos/emirates.jpg",
+        "aereos/ethiopian.png",
+        "aereos/klm.jpg",
+        "aereos/latam.jpg",
+        "aereos/turkish.jpg"
+    };
     public static List<string> ListaExcursiones {get; private set;} = new List<string>() {
         "excursiones/tokio-go_kart_calle_shibuya.jpg",
         "excursiones/delhi-tour_taj_mahal_desde_delhi.jpg",

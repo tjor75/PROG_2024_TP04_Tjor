@@ -7,9 +7,9 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TP04_Tjor.csproj",
+                "${workspaceFolder}/PROG_2024_TP04_Tjor.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -19,9 +19,9 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/TP04_Tjor.csproj",
+                "${workspaceFolder}/PROG_2024_TP04_Tjor.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/TP04_Tjor.csproj"
+                "${workspaceFolder}/PROG_2024_TP04_Tjor.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
