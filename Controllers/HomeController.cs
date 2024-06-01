@@ -23,6 +23,7 @@ public class HomeController : Controller
         ViewBag.ListaDestinos = ORTWorld.ListaDestinos;
         ViewBag.ListaHoteles = ORTWorld.ListaHoteles;
         ViewBag.ListaAereos = ORTWorld.ListaAereos;
+        ViewBag.ListaExcursiones = ORTWorld.ListaExcursiones;
         ViewBag.Paquetes = ORTWorld.Paquetes;
         
         return View();
@@ -43,6 +44,7 @@ public class HomeController : Controller
             ViewBag.ListaDestinos = ORTWorld.ListaDestinos;
             ViewBag.ListaHoteles = ORTWorld.ListaHoteles;
             ViewBag.ListaAereos = ORTWorld.ListaAereos;
+            ViewBag.ListaExcursiones = ORTWorld.ListaExcursiones;
             ViewBag.Paquetes = ORTWorld.Paquetes;
 
             return View("SelectPaquete");

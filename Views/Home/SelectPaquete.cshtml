@@ -1,0 +1,59 @@
+@{
+    ViewData["Title"] = "Armar paquete";
+}
+
+<h1>Armar paquete</h1>
+<section>
+    <form action='@Url.Action("GuardarPaquete")'>
+        <div>
+            <h2>Destino</h2>
+            <ol>
+            @foreach (string destino in ViewBag.ListaDestinos)
+            {
+                <li>@destino</li>
+            }
+            </ol>
+            <input type="number" name="Destino" min="1" max="@ViewBag.ListaDestinos.Count">
+        </div>
+        <div class="galeria">
+            <h2>Hoteles</h2>
+            <ol>
+            @for (int i = 0; i < ViewBag.ListaHoteles.Count; i++) {
+                <li>
+                    <img src="~/img/@ViewBag.ListaHoteles[i]" alt="Hotel @(i+1)">
+                </li>
+            }
+            </ol>
+            <input type="number" name="Hotel" min="1" max="@ViewBag.ListaHoteles.Count">
+        </div>
+        <div class="galeria">
+            <h2>Aéreos</h2>
+            <ol>
+            @for (int i = 0; i < ViewBag.ListaAereos.Count; i++) {
+                <li>
+                    <img src="~/img/@ViewBag.ListaAereos[i]" alt="Aéreo @(i+1)">
+                </li>
+            }
+            </ol>
+            <input type="number" name="Aereo" min="1" max="@ViewBag.ListaAereos.Count">
+        </div>
+        <div class="galeria">
+            <h2>Excrusiones</h2>
+            <ol>
+            @for (int i = 0; i < ViewBag.ListaExcursiones.Count; i++) {
+                <li>
+                    <img src="~/img/@ViewBag.ListaExcursiones[i]" alt="Aéreo @(i+1)">
+                </li>
+            }
+            </ol>
+            <input type="number" name="Excursion" min="1" max="@ViewBag.ListaExcursiones.Count">
+        </div>
+        <input type="submit">
+    </form>
+    
+
+
+    <!-- ViewBag.ListaHoteles = ORTWorld.ListaHoteles;
+        ViewBag.ListaAereos = ORTWorld.ListaAereos;
+        ViewBag.Paquetes-->
+</section>
