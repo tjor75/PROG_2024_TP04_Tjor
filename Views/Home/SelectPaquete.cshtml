@@ -25,9 +25,7 @@
             <h2>Hoteles</h2>
             <ol>
             @for (int i = 0; i < ViewBag.ListaHoteles.Count; i++) {
-                <li class="itemGaleria">
-                    <img src="~/img/@ViewBag.ListaHoteles[i]" alt="Hotel @(i+1)">
-                </li>
+                <li><img src="~/img/@ViewBag.ListaHoteles[i]" alt="Hotel @(i+1)"></li>
             }
             </ol>
             <p>
@@ -39,9 +37,7 @@
             <h2>Aéreos</h2>
             <ol>
             @for (int i = 0; i < ViewBag.ListaAereos.Count; i++) {
-                <li class="itemGaleria">
-                    <img src="~/img/@ViewBag.ListaAereos[i]" alt="Aéreo @(i+1)">
-                </li>
+                <li><img src="~/img/@ViewBag.ListaAereos[i]" alt="Aéreo @(i+1)"></li>
             }
             </ol>
             <p>
@@ -53,9 +49,7 @@
             <h2>Excursiones</h2>
             <ol>
             @for (int i = 0; i < ViewBag.ListaExcursiones.Count; i++) {
-                <li class="itemGaleria">
-                    <img src="~/img/@ViewBag.ListaExcursiones[i]" alt="Aéreo @(i+1)">
-                </li>
+                <li><img src="~/img/@ViewBag.ListaExcursiones[i]" alt="Aéreo @(i+1)"></li>
             }
             </ol>
             <p>

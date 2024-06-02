@@ -15,15 +15,17 @@
 
 <section>
     <h2>Paquetes</h2>
-    @foreach (string llave in ViewBag.Paquetes.Keys)
-    {
-    <div>
-        <h3>@llave</h3>
-        <img src="~/img/@ViewBag.Paquetes[llave].Hotel" alt="Hotel del paquete @llave">
-        <img src="~/img/@ViewBag.Paquetes[llave].Aereo" alt="Aéreo del paquete @llave">
-        <img src="~/img/@ViewBag.Paquetes[llave].Excursion" alt="Excursión de @llave">
+    <div class="galeria">
+        @foreach (string llave in ViewBag.Paquetes.Keys)
+        {
+        <div>
+            <h3>@llave</h3>
+            <img src="~/img/@ViewBag.Paquetes[llave].Hotel" alt="Hotel del paquete @llave">
+            <img src="~/img/@ViewBag.Paquetes[llave].Aereo" alt="Aéreo del paquete @llave">
+            <img src="~/img/@ViewBag.Paquetes[llave].Excursion" alt="Excursión de @llave">
+        </div>
+        }
     </div>
-    }
 </section>
 }
 

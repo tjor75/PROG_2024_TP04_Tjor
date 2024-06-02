@@ -16,7 +16,6 @@ header, footer {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
 }
 header p {
@@ -45,7 +44,7 @@ h1, h2 {
 main h1, main p, main section { margin: 5px 3%; }
 section p, div p, footer p {
   clear: both;
-  margin: 0;
+  margin: 3px;
 }
 
 section {
@@ -67,12 +66,17 @@ div {
   justify-content: center;
   align-items: center;
 }
-.itemGaleria {
-  width: 18%;
-  float: left;
-  margin-right: 2%;
+
+ol, .galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.itemGaleria img {
+ol li, .galeria div {
+  width: 18%;
+}
+ol img, .galeria div img {
   width: 100%;
 }
 
