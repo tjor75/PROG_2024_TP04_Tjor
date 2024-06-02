@@ -2,22 +2,92 @@ html {
   font-size: 14px;
   min-height: 100%;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+header, footer {
+  background: #8a2be2;
+  padding: 5px 3%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+header p {
+  font-family: "Chivo Mono", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+header a {
+  color: #c9f39e;
+  text-decoration: none;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+}
+header li {
+  float: left;
+  margin-right: 5px;
+}
+header a:hover { color: #ffffff; }
+
+h1, h2 {
+  font-family: "Chivo Mono", sans-serif;
+}
+main h1, main p {
+  margin: 5px 3%;
+}
+h1, p, section { margin: 5px 3%; }
+p {
+  clear: both;
+  margin: 0;
+}
+
+section { background: #f8f9fa; }
+div {
+  background: #e8e9ea;
+  margin: 5px;
+  padding: 5px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.itemGaleria {
+  width: 18%;
+  float: left;
+  margin-right: 2%;
+}
+.itemGaleria img {
+  width: 100%;
+}
+
+input[type=submit] {
+  background: #8a2be2;
+  color: #c9f39e;
+  font-family: "Manrope", sans-serif;
+}
+input[type=submit]:hover {
+  background: #9850db;
+}
+
+footer p {
+  color: #c9f39e;
+}
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
   }
-}
-
-body {
-  margin: 10px;
-  padding: 10px;
-}
-
-
-footer {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
 }

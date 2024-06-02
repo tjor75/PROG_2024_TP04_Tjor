@@ -29,7 +29,7 @@ public static class ORTWorld {
     public static List<string> ListaExcursiones {get; private set;} = new List<string>() {
         "excursiones/tokio-go_kart_calle_shibuya.jpg",
         "excursiones/delhi-tour_taj_mahal_desde_delhi.jpg",
-        "excursiones/shanghai-shanghai-autentico_recorrido_gastronomico_local_centro_shanghai.jpg",
+        "excursiones/shanghai-autentico_recorrido_gastronomico_local_centro_shanghai.jpg",
         "excursiones/dhaka-fuerte_lalbag.jpg",
         "excursiones/sao_paulo-tour_biciletas_centro.jpg",
         "excursiones/cdmx-xochimilco_coyoacan_museo_frida_kalho.jpg",

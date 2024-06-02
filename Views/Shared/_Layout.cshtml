@@ -5,16 +5,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ORT World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 
 <body>
     <header>
-        <p>ORTWORLD</p>
+        <p><a href='@Url.Action("Index")'>ORTWORLD</a></p>
         <nav>
             <ul>
                 <li><a href='@Url.Action("Index")'>Home</a></li>
-                <li><a href='@Url.Action("SelectPaquete")'>Crear paquete</a></li>
+                <li><a href='@Url.Action("SelectPaquete")'>Armar paquete</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +27,10 @@
     </main>
 
     <footer>
-        &copy; @DateTime.Now.Year ORT World, LLC
+        <p>
+            &copy;@DateTime.Now.Year ORT World, LLC.
+            Londres, Catamarca
+        </p>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
