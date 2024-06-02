@@ -43,7 +43,7 @@ public static class ORTWorld {
     public static bool IngresarPaquete(string destinoSeleccionado, Paquete paquete)
     {
         bool esExitoso = true;
-        if (Paquetes.ContainsKey(destinoSeleccionado))
+        if (!Paquetes.ContainsKey(destinoSeleccionado))
             Paquetes.Add(destinoSeleccionado, paquete);
         else
             esExitoso = false;
