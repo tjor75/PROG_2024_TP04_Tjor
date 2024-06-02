@@ -24,8 +24,7 @@ public class HomeController : Controller
         ViewBag.ListaHoteles = ORTWorld.ListaHoteles;
         ViewBag.ListaAereos = ORTWorld.ListaAereos;
         ViewBag.ListaExcursiones = ORTWorld.ListaExcursiones;
-        ViewBag.Paquetes = ORTWorld.Paquetes;
-        
+                
         return View();
     }
     public IActionResult GuardarPaquete(int Destino, int Hotel, int Aereo, int Excursion)
@@ -45,7 +44,6 @@ public class HomeController : Controller
             ViewBag.ListaHoteles = ORTWorld.ListaHoteles;
             ViewBag.ListaAereos = ORTWorld.ListaAereos;
             ViewBag.ListaExcursiones = ORTWorld.ListaExcursiones;
-            ViewBag.Paquetes = ORTWorld.Paquetes;
 
             return View("SelectPaquete");
         }

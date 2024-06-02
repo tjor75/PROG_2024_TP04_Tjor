@@ -10,3 +10,16 @@
     <p>PLANIFICA TU VIAJE: ¡¡LOS PAQUETES TURISTICOS MÁS BARATOS!!</p>
     <p><a href='@Url.Action("SelectPaquete")'>Armar paquete</a></p>
 </section>
+
+<section>
+    <h2>Paquetes</h2>
+    @for (int i = 0; i < ViewBag.Paquetes.Count; i++)
+    {
+    <div>
+        <h3></h3>
+        <img src="~/img/@ViewBag.Paquetes[i].Hotel" alt="Hotel del paquete @(i+1)">
+        <img src="~/img/@ViewBag.Paquetes[i].Aereo" alt="Hotel del paquete @(i+1)">
+        <img src="~/img/@ViewBag.Paquetes[i].Excursion" alt="Hotel del paquete @(i+1)">
+    </div>
+    }
+</section>
