@@ -2,17 +2,17 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>ORT WORLD</h1>
+<h1>ORTWORLD</h1>
 <p>Bienvenidos al sitio web oficial de ORT WORLD</p>
 
 <section class="center">
     <img src="~/img/mundo.gif" alt="EL MUNDO EN MOVIMIENTO">
     <p>PLANIFICA TU VIAJE: ¡¡LOS PAQUETES TURISTICOS MÁS BARATOS!!</p>
-    <p><a class="boton" href='@Url.Action("SelectPaquete")'>Armar paquete</a></p>
+    <p><a class="boton" href='@Url.Action("SelectPaquete")'>Seleccionar paquete</a></p>
 </section>
-
 @if (ViewBag.Paquetes.Count != 0)
 {
+
 <section>
     <h2>Paquetes</h2>
     @foreach (string llave in ViewBag.Paquetes.Keys)
@@ -21,8 +21,14 @@
         <h3>@llave</h3>
         <img src="~/img/@ViewBag.Paquetes[llave].Hotel" alt="Hotel del paquete @llave">
         <img src="~/img/@ViewBag.Paquetes[llave].Aereo" alt="Aéreo del paquete @llave">
-        <img src="~/img/@ViewBag.Paquetes[llave].Excursion" alt="Ecursión de @llave">
+        <img src="~/img/@ViewBag.Paquetes[llave].Excursion" alt="Excursión de @llave">
     </div>
     }
 </section>
 }
+
+<section class="center">
+    <h2>Medios de pago</h2>
+    <p>Podés pagar con todos los medios de pago populares</p>
+    <p>¿VISA, Mastercard, Mercado Pago? Tenés tarjeta, podés obtener tu viaje de ensueño.</p>
+</section>

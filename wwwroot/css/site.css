@@ -52,6 +52,7 @@ section {
   background: #f8f9fa;
   padding: 1%;
   border-radius: 5px;
+  clear: both;
 }
 div {
   background: #e8e9ea;
