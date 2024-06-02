@@ -42,20 +42,22 @@ header a:hover { color: #ffffff; }
 h1, h2 {
   font-family: "Chivo Mono", sans-serif;
 }
-main h1, main p {
-  margin: 5px 3%;
-}
-h1, p, section { margin: 5px 3%; }
-p {
+main h1, main p, main section { margin: 5px 3%; }
+section p, div p, footer p {
   clear: both;
   margin: 0;
 }
 
-section { background: #f8f9fa; }
+section {
+  background: #f8f9fa;
+  padding: 1%;
+  border-radius: 5px;
+}
 div {
   background: #e8e9ea;
-  margin: 5px;
-  padding: 5px;
+  margin-bottom: 1%;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 .center {
@@ -73,13 +75,19 @@ div {
   width: 100%;
 }
 
-input[type=submit] {
+.boton, input[type=submit] {
   background: #8a2be2;
-  color: #c9f39e;
+  color: #ffffff;
   font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 3px;
+  border: solid 1px #5500a4;
+  border-radius: 3px;
 }
-input[type=submit]:hover {
+.boton:hover, input[type=submit]:hover {
   background: #9850db;
+  color: #c9f39e;
 }
 
 footer p {
