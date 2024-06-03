@@ -32,25 +32,14 @@ public class HomeController : Controller
         bool formatoValido = Destino > 0 && Hotel > 0 && Aereo > 0 && Destino > 0 && Destino <= ORTWorld.ListaDestinos.Count && Hotel <= ORTWorld.ListaHoteles.Count && Aereo <= ORTWorld.ListaAereos.Count && Excursion <= ORTWorld.ListaExcursiones.Count;
         Paquete nuevoPaquete;
 
-        if (formatoValido)
-        { 
-            if (ORTWorld.IngresarPaquete(ORTWorld.ListaDestinos[Destino-1], new Paquete(ORTWorld.ListaHoteles[Hotel-1], ORTWorld.ListaAereos[Aereo-1], ORTWorld.ListaExcursiones[Excursion-1])))
-                return RedirectToAction("Index");
-            else
-            {
-                ViewBag.Error = "Ya existe un paquete para esta ciudad";
-
-                ViewBag.ListaDestinos = ORTWorld.ListaDestinos;
-                ViewBag.ListaHoteles = ORTWorld.ListaHoteles;
-                ViewBag.ListaAereos = ORTWorld.ListaAereos;
-                ViewBag.ListaExcursiones = ORTWorld.ListaExcursiones;
-
-                return View("SelectPaquete");
-            }
-        }
+        if (formatoValido && ORTWorld.IngresarPaquete(ORTWorld.ListaDestinos[Destino-1], new Paquete(ORTWorld.ListaHoteles[Hotel-1], ORTWorld.ListaAereos[Aereo-1], ORTWorld.ListaExcursiones[Excursion-1])))
+            return RedirectToAction("Index");
         else
         {
-            ViewBag.Error = "Se ingresaron destinos invalidos";
+            if (formatoValido)
+                ViewBag.Error = "Ya existe un paquete para esta ciudad";
+            else
+                ViewBag.Error = "Se ingresaron datos inválidos";
             
             ViewBag.ListaDestinos = ORTWorld.ListaDestinos;
             ViewBag.ListaHoteles = ORTWorld.ListaHoteles;
