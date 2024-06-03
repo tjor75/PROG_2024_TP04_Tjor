@@ -27,7 +27,7 @@ public class HomeController : Controller
                 
         return View();
     }
-    public IActionResult GuardarPaquete(int Destino, int Hotel, int Aereo, int Excursion)
+    public IActionResult GuardarPaquete(int Destino = -1, int Hotel = -1, int Aereo = -1, int Excursion = -1)
     {
         bool formatoValido = Destino > 0 && Hotel > 0 && Aereo > 0 && Destino > 0 && Destino <= ORTWorld.ListaDestinos.Count && Hotel <= ORTWorld.ListaHoteles.Count && Aereo <= ORTWorld.ListaAereos.Count && Excursion <= ORTWorld.ListaExcursiones.Count;
         Paquete nuevoPaquete;
