@@ -67,6 +67,9 @@ div {
   align-items: center;
 }
 
+.galeria {
+  background: #f8f9fa;
+}
 ol, .galeria {
   display: flex;
   flex-direction: row;
